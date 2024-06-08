@@ -1,0 +1,112 @@
+
+.navbar {
+    background-color: #6a0dad; 
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80px;
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: lightgray;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.search-bar button:hover {
+    background-color: #555; 
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    
+    .search-bar {
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    .menu-button {
+        display: block; 
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu-button:hover {
+        background-color: #555; 
+    }
+}
